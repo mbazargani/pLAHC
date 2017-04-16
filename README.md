@@ -1,4 +1,4 @@
-<strong> Parameter-less Late Acceptance Hill-Climbing </strong>
+<strong><font size="+7"> Parameter-less Late Acceptance Hill-Climbing </font></strong>
 
 
 To compile you will need C++11. We use gcc version 4.8.1 for our compilation.
