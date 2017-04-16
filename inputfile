@@ -1,0 +1,78 @@
+#
+# This is a sample input file explaining the configuration options for the application of the 3 algorithms,
+# 		- LAHC
+#		- pLAHC
+#		- pLAHC-s
+# to the symmetric TSP, described in the paper "Parameter-less Late Acceptance Hillclimbing", ACM GECCO'17,
+# by Mosab Bazargani and Fernando G. Lobo.
+#
+#
+#
+# NOTE:
+#		--> License: BSD 3-Clause License
+#
+# --
+
+
+
+
+############# TSP PARAMETERS ################################################
+#
+problem_name:						rat783.tsp
+
+
+############# GENERAL PARAMETERS #############################################
+#
+# NOTE:
+#		algorithm can be:
+#			- LAHC
+#			- pLAHC
+#			- pLAHC-s
+algorithm:						LAHC
+seed:							5
+number_run:						2
+
+
+############# LAHC PARAMETERS ################################################
+#
+list_size:						10
+
+
+############# pLAHC / pLAHC-s ################################################
+#
+# NOTE:
+#        	One should consider that pLAHC and pLAHC-s do not have 
+#		parameters. The values below are just defined for 
+#		experimental purposes.
+#		'base_list_size' defines the starting list size in pLAHC/pLAHC-s
+#		Default value for 'base_list_size' is 1.
+#		'list_scaling_size' defines the scale factor for the growth of the 
+#       history list length upon a restart in pLAHC/pLAHC-s.
+#		Default value for 'list_scaling_size' is 2.
+#		
+base_list_size:						1
+list_scaling_size:					2
+
+
+############# STOPPING CRITERION PARAMETERS ##################################
+#
+# NOTE:
+#		first the type and then after coma there should be the 
+#		parameter of it.
+#		stopping criterion can be:
+#			- max_iteration
+#			- solution_quality
+#			- point_of_convergence
+#		stopping criterion 'point_of_convergence' as defined in Burke 
+#		and Bykov (2017) is the number of consecutive non-improving 
+#  		(idle) iterations over the total number of iterations. 
+#		Default value for 'point_of_convergence' is 2 percent as it is 
+#		suggested in the original LAHC paper.
+stopping_criterion:					point_of_convergence, 2
+
+
+############# STORE DATA PARAMETERS ##########################################
+#
+restore_progress:					on
+restore_special_events:					on
+restore_best_results:					on
