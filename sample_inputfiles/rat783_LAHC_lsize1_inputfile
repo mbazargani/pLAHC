@@ -1,0 +1,13 @@
+# This is an inputfile for "LAHC" application.
+# Date:     Sunday, 2016-11-16, 15:22
+problem_name:                      rat783.tsp
+algorithm:                         LAHC
+seed:                              5
+number_run:                        100
+list_size:                         1
+base_list_size:                    1
+list_scaling_size:                 2
+stopping_criterion:                point_of_convergence, 2
+restore_progress:                  on
+restore_special_events:            on
+restore_best_results:              on

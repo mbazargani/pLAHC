@@ -1,0 +1,14 @@
+# This is an inputfile for "pLAHC" application.
+# Date:     Sunday, 2016-11-16, 15:23
+problem_name:                      rat783.tsp
+algorithm:                         pLAHC
+seed:                              5
+number_run:                        100
+list_size:                         1
+base_list_size:                    1
+list_scaling_size:                 2
+stopping_criterion:                solution_quality, 10435.620000
+stopping_criterion:                point_of_convergence, 2
+restore_progress:                  on
+restore_special_events:            on
+restore_best_results:              on
