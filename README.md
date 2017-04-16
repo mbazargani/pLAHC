@@ -1,3 +1,6 @@
+<strong> Parameter-less Late Acceptance Hill-Climbing <\strong>
+
+
 To compile you will need C++11. We use gcc version 4.8.1 for our compilation.
 
 Our build system uses Makefiles. You can compile the application by typing "make" at the command line.
