@@ -11,6 +11,6 @@
 
 <p>To run an experiment, the executable file "pLAHC", TSP instance and input file must be in the same directory. For example by typing the following at the command line:</p>
 
-<p><font face="courier" size="-1" color="#000000">./pLAHC inputfile</font></p>
+<p><font face="Lucida Console" size="-1" color="#000000">./pLAHC inputfile</font></p>
 
 <p>All of the output files will be generated in the same directory as the executable file "pLAHC". The output file that contains the main output data has a name ending with ".log". The application also produces some other files for data analysis purposes.</p>
